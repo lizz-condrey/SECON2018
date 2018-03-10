@@ -65,7 +65,15 @@ def turnleft():
     motor2.backward(100)
     motor3.forward(100)
     motor4.forward(100)
-    sleep(2)     
+    sleep(2) 
+    
+def turnright():
+    motor1.forward(100)
+    motor2.forward(100)
+    motor3.backward(100)
+    motor4.backward(100)
+    sleep(2)
+    
         
 motor1 = Motor(5, 7, 3)
 motor2 = Motor(35, 37, 33)
@@ -76,5 +84,68 @@ motor4 = Motor(13, 15, 11)
 #motor3 = Motor(29, 31, 19)
 #motor4 = Motor(35, 37, 33)
 
+#motor 1 forward half and full speed
+motor1.forward(50)
+sleep(3)
+motor1.forward(100)
+sleep(3)
+motor1.stop()
+sleep(2)
 
-#GPIO.cleanup()
+#motor 2 forward half and full speed
+motor2.forward(50)
+sleep(3)
+motor2.forward(100)
+sleep(3)
+motor2.stop()
+sleep(2)
+
+#motor 3 forward half and full speed
+motor3.forward(50)
+sleep(3)
+motor3.forward(100)
+sleep(3)
+motor3.stop()
+sleep(2)
+
+#motor 4 forward half and full speed
+motor4.forward(50)
+sleep(3)
+motor4.forward(100)
+sleep(3)
+motor4.stop()
+sleep(2)
+
+#motor 1 backward half and full speed
+motor1.backward(50)
+sleep(3)
+motor1.backward(100)
+sleep(3)
+motor1.stop()
+sleep(2)
+
+#motor 2 backward half and full speed
+motor2.backward(50)
+sleep(3)
+motor2.backward(100)
+sleep(3)
+motor2.stop()
+sleep(2)
+
+#motor 3 backward half and full speed
+motor3.backward(50)
+sleep(3)
+motor3.backward(100)
+sleep(3)
+motor3.stop()
+sleep(2)
+
+#motor 4 backward half and full speed
+motor4.backward(50)
+sleep(3)
+motor4.backward(100)
+sleep(3)
+motor4.stop()
+sleep(2)
+
+GPIO.cleanup()
